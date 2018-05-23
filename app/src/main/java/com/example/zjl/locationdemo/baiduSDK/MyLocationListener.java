@@ -2,6 +2,7 @@ package com.example.zjl.locationdemo.baiduSDK;
 
 import com.baidu.location.BDAbstractLocationListener;
 import com.baidu.location.BDLocation;
+import com.example.zjl.locationdemo.app.AppApplication;
 import com.jaydenxiao.common.commonutils.LogUtils;
 import com.jaydenxiao.common.commonutils.ToastUtil;
 
@@ -33,9 +34,12 @@ public class MyLocationListener extends BDAbstractLocationListener {
         String city = location.getCity();    //获取城市
         String district = location.getDistrict();    //获取区县
         String street = location.getStreet();    //获取街道信息
+        String streetNumber = location.getAddress().streetNumber;
 
         ToastUtil.showShort(addr);
         LogUtils.loge(addr);
         LogUtils.loge("经度"+String.valueOf(latitude)+"    "+"纬度"+String.valueOf(longitude));
+        AppApplication.getmLocationClient().stop();
     }
+
 }

@@ -58,8 +58,8 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-        clear.setOnClickListener(v -> {
-            display_info.setText("");
-        });
+        clear.setOnClickListener(v ->
+            display_info.setText("")
+        );
     }
 }

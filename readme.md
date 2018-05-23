@@ -1,0 +1,1 @@
+[sdk方法说明](http://lbsyun.baidu.com/index.php?title=android-locsdk/guide/get-location/address)
