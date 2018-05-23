@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zjl.locationdemo.activity.MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/display_info"
+        android:layout_above="@+id/start_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="所在位置"
+        />
+    <Button
+        android:id="@+id/start_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击开始定位"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_below="@+id/start_location"
+        android:id="@+id/stop_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="点击停止定位" />
+
+    <Button
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="清除显示内容" />
+
+</RelativeLayout>
