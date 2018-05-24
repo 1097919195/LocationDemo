@@ -42,12 +42,10 @@ public class AppApplication extends BaseApplication {
             String city = location.getCity();    //获取城市
             String district = location.getDistrict();    //获取区县
             String street = location.getStreet();    //获取街道信息
-            String streetNumber = location.getAddress().streetNumber;
 
             ToastUtil.showShort(addr);
-            LogUtils.loge(addr);
-            LogUtils.loge("经度"+String.valueOf(latitude)+"    "+"纬度"+String.valueOf(longitude));
-            AppApplication.getmLocationClient().stop();
+            LogUtils.loge("所在位置："+addr+"    "+"经度："+String.valueOf(latitude)+"    "+"纬度："+String.valueOf(longitude));
+            mLocationClient.stop();
         });
         //注册监听函数
 

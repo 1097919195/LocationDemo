@@ -9,7 +9,6 @@ import com.baidu.location.BDLocation;
 import com.baidu.location.LocationClientOption;
 import com.example.zjl.locationdemo.R;
 import com.example.zjl.locationdemo.app.AppApplication;
-import com.example.zjl.locationdemo.baiduSDK.MyLocationListener;
 import com.jaydenxiao.common.base.BaseActivity;
 import com.jaydenxiao.common.commonutils.LogUtils;
 
