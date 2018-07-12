@@ -3,7 +3,6 @@ package com.example.zjl.locationdemo.app;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.example.zjl.locationdemo.BuildConfig;
-import com.example.zjl.locationdemo.baiduSDK.MyLocationListener;
 import com.jaydenxiao.common.baseapp.BaseApplication;
 import com.jaydenxiao.common.commonutils.LogUtils;
 import com.jaydenxiao.common.commonutils.ToastUtil;
@@ -14,7 +13,7 @@ import com.jaydenxiao.common.commonutils.ToastUtil;
 
 public class AppApplication extends BaseApplication {
     public static LocationClient mLocationClient = null;
-    private MyLocationListener myListener = new MyLocationListener();
+//    private MyLocationListener myListener = new MyLocationListener();
     LocationClientOption option = new LocationClientOption();
     @Override
     public void onCreate() {
